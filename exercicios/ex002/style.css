@@ -1,9 +1,10 @@
-p, h1, h2 {
+h2 {
   margin: 0px;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  margin: 50px;
 }
 
 h1 {
@@ -16,11 +17,9 @@ h2 {
 
 p {
   color: #b2b2b2;
-  line-height: 40px;
-  margin: 10px 0px 20px;
 }
 
-strong, .amarelo {
+span{
   color: #febe01;
 }
 
@@ -31,11 +30,12 @@ a {
   padding: 10px;
   font-weight: bold;
   border-radius: 4px;
+  display: inline-block;
 }
 
 div {
   background-color: #111;
   border-radius: 4px;
-  margin: 20px 50px;
-  padding: 40px 40px 45px 40px;
+  margin: 20px;
+  padding: 30px;
 }
