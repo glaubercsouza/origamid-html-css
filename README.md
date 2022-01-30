@@ -1,2 +1,3 @@
-# origamid-html-css
- Repositório para armazenar os exercícios do curso.
+# Origamid - HTML / CSS / JavaScript
+
+ Repositório criado para armazenar os exercícios do curso.
