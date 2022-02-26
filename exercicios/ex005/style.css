@@ -1,5 +1,28 @@
+:root {
+  --cor-primaria: #f7f7f7;
+  --cor-bg-1: #FFF;
+  --cor-destaque: #e21;
+  --cor-hover: #900;
+  --texto-1: #000;
+  --texto-2: #c6c6c6;
+  --cor-subtitulo: #00000033;
+  --onda: url(img/onda.svg);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cor-primaria: #1f1f1f;
+    --cor-bg-1: #000;
+    --texto-1: #fff;
+    --texto-2: #c6c6c6;
+    --cor-subtitulo: #ffffff33;
+    --onda: url(img/onda-escura.svg);
+  }
+}
+
 html {
   font-size: 10px;
+  color: var(--texto-1);
 }
 
 body{
@@ -8,7 +31,7 @@ body{
   gap: 60px;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0px;
-  background: #f7f7f7;
+  background: var(--cor-primaria);
   margin-top: 60px; 
 }
 
@@ -49,17 +72,17 @@ p {
 }
 
 .menu li a {
-  color: #000;
-  background: #FFFFFF;
+  color: var(--texto-1);
+  background: var(--cor-bg-1);
   text-decoration: none;
   border-radius: 4px;
   padding: 1.6rem 2rem;
   font-size: 1.6rem;
-  border: solid 2px #FFFFFF;;
+  border: solid 2px var(--cor-bg-1);;
 }
 
 .menu li a:hover {
-  border-color: #e21;
+  border-color: var(--cor-destaque);
 
 }
 
@@ -71,7 +94,7 @@ p {
 
 .intro {
   padding: 40px;
-  background: white;
+  background: var(--cor-bg-1);
   text-align: right;
   display: grid;
   align-content: center;
@@ -85,7 +108,7 @@ p {
   display: block;
   width: 60px;
   height: 4px;
-  background: #e21;
+  background: var(--cor-destaque);
   position: absolute;
   top: 30px;
   right: -30px;
@@ -97,7 +120,7 @@ h1 {
 }
 
 .botao {
-  background: #ee2211;
+  background: var(--cor-destaque);
   color: white;
   text-decoration: none;
   border-radius: 4px;
@@ -106,19 +129,19 @@ h1 {
 }
 
 .botao:hover {
-  background: #900;
+  background: var(--cor-hover);
 }
 
 .lista-vantagens {
   padding: 40px 40px 40px 40px;
   margin: 0px;
-  background: white;
+  background: var(--cor-bg-1);
 }
 
 .subtitulo {
-  color: #c6c6c6;
-  background-color: #f7f7f7;
-  background-image: url(img/onda.svg);
+  color: var(--cor-subtitulo);
+  background-color: var(--cor-primaria);
+  background-image: var(--onda);
   font-size: 6.4rem;
   text-align: right;
   padding: 4rem;
@@ -136,11 +159,11 @@ h1 {
 }
 
 .item-vantagens:nth-child(odd) {
-  background: #f7f7f7;
+  background: var(--cor-primaria);
 }
 
 .item-vantagens:hover {
-  border-color: #e21;
+  border-color: var(--cor-destaque);
 }
 
 .item-vantagens p {
@@ -154,7 +177,7 @@ h3 {
 .footer {
   width: 100%;
   text-align: center;
-  background: #fff;
+  background: var(--cor-bg-1);
   padding: 4rem;
   box-sizing: border-box;
 }
