@@ -1,32 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulários</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <form action="./">
-    <label for="nome">Nome</label>
-    <input type="text" id="nome" name="nome">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulários</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="./">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" />
 
-    <label for="cpf">CPF</label>
-    <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00">
+      <label for="cpf">CPF</label>
+      <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00" />
 
-    <label for="senha">Senha</label>
-    <input type="password" name="senha" id="senha">
+      <label for="senha">Senha</label>
+      <input type="password" name="senha" id="senha" />
 
-    <label for="email">Email</label>
-    <input type="email" name="email" id="email">
+      <div class="checkbox">
+        <input type="checkbox" name="termos" id="termos" value="aceito"/>
+        <label for="termos">Aceito os termos de condições da empresa.</label>
+      </div>
 
-    <label for="idade">Idade</label>
-    <input type="number" name="idade" id="idade">
+      <div class="checkbox">
+        <input type="checkbox" name="anuncio" id="anuncio" value="aceito"/>
+        <label for="anuncio">Desejo receber anúncios</label>
+      </div>
 
-    <label for="saida">Saída do Hotel</label>
-    <input type="date" name="saida" id="saida">
-    <button>Enviar</button>
-  </form>
-</body>
+      <p>Entrega:</p>
+      <div class="radio">
+        <input type="radio" name="retirada" id="retirada" value="aceito"/>
+        <label for="retirada">Retirar no local.</label>
+      </div>
+      <div class="radio">
+        <input type="radio" name="retirada" id="entrega" value="aceito"/>
+        <label for="entrega">Entrega em casa.</label>
+      </div>
+
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" />
+
+      <label for="idade">Idade</label>
+      <input type="number" name="idade" id="idade" />
+
+      <label for="saida">Saída do Hotel</label>
+      <input type="date" name="saida" id="saida" />
+      <button>Enviar</button>
+    </form>
+  </body>
 </html>
