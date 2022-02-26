@@ -1,0 +1,36 @@
+[required] {
+  border: 2px solid tomato;
+}
+
+[href="#contato"] {
+  border: 2px solid greenyellow;
+}
+
+[href^="#"] {
+  background: tomato;
+} /* Começar com */
+
+[href$=".com"] {
+  background: forestgreen;
+}  /* Terminar com */
+
+section > h2 {
+  color: tomato;
+} /* Filho Direto */
+
+p {
+  margin: px;
+}
+
+article {
+  background: lightgreen;
+  padding: 10px;
+}
+
+p + p{
+  margin-top: 20px;
+} /* Só irá selecionar elemento p que estiver depois de um elemento p */
+
+* {
+  border: 2px solid red
+}
