@@ -14,7 +14,7 @@ const ativar = document.querySelector('.ativar');
 
 /** @param {MouseEvent} event */
 function ativarAoClick(event) {
-  console.log(event.);
+  console.log(event);
 }
 
 ativar.addEventListener('click', ativarAoClick);
