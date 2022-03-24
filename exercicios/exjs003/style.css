@@ -1,0 +1,25 @@
+button {
+  padding: 15px 20px;
+  text-transform: uppercase;
+  background: #303030;
+  color: #AAAA9E;
+  border: 2px solid #303030;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #AAAA9E;
+  color:  #303030;
+  border-color: #AAAA9E;
+}
+
+div {
+  display: inline;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  background: #303030;
+  color: #AAAA9E;
+  border: 2px solid #303030;
+  border-radius: 4px;
+}
