@@ -15,6 +15,9 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap"
       rel="stylesheet"
     />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
   </head>
   <body id="orcamento">
     <header class="header-bg">
@@ -33,13 +36,13 @@
     <main>
       <div class="titulo-bg">
         <div class="titulo container">
-          <p class="font-2-l-b cor-05">Cotações no seu email</p>
-          <h1 class="font-1-xxl cor-00">solicite um orçamento<span class="cor-p01">.</span></h1>
+          <p class="font-2-l-b cor-05 fadeInDown" data-anime="200">Cotações no seu email</p>
+          <h1 class="font-1-xxl cor-00 fadeInDown" data-anime="400">solicite um orçamento<span class="cor-p01">.</span></h1>
         </div>
       </div>
 
       <form class="orcamento container" action="./">
-        <div class="orcamento-produto">
+        <div class="orcamento-produto fadeInLeft" data-anime="600">
           <h2 class="font-1-xs cor-05">Bikcraft ou Seguro?</h2>
 
           <input type="radio" name="tipo" id="bikcraft" value="bikcraft">
@@ -102,7 +105,7 @@
           </div>
         </div>
 
-        <div class="orcamento-dados form">
+        <div class="orcamento-dados form fadeInRight" data-anime="600">
           <h2 class="font-1-xs cor-09 col-2">Dados Pessoais</h2>
           <div>
             <label for="nome">Nome</label>
@@ -190,6 +193,7 @@
         </p>
       </div>
     </footer>
+    <script src="./js/plugins/simple-anime.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>
